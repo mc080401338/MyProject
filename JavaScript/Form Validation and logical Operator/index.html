@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login System</title>
+</head>
+<body>
+  <form action="" onsubmit="return login()">
+    Username <br>
+    <input type="text" name="username" id="uname"><br>
+    password <br>
+    <input type="password" name="password" id="upass"><br>
+    <input type="submit" value="Login" name="" id="" onclick="">
+  </form>
+  <h1 id="result"></h1>
+  <script>
+    function login(){
+      var user = document.getElementById("uname").value;
+      var pass = document.getElementById("upass").value;
+     var check = user=="hamid" && pass==12345 ? "login success" : "login failed";
+     document.getElementById("result").innerHTML = check;
+     return false;
+    }
+  </script>
+</body>
+</html>
