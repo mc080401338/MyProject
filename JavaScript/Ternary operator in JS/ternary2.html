@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ternary operator</title>
+</head>
+<body>
+  username: <br>
+  <input type="text" name="username" id="user"><br>
+  <input type="submit" value="Check" onclick="stp()">
+  <script>
+    function stp(){
+      var x = document.getElementById("user").value;
+     // x=="admin" ? window.alert("user found") : window.alert("user no found");
+     var result = x=="admin" ? "user found":"user not found";
+     window.alert(result);
+    }
+   
+  </script>
+</body>
+</html>

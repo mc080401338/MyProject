@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Range validation task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="result">STP Computer Education</h1>
+  <div id="fixed-box">
+    <p id="showtext"></p>
+    <input type="range" name="range" id="range" min="0" max="1000" oninput="demo()">
+  </div>
+  <script>
+    function demo(){
+      var x = document.getElementById("range").value;
+      var y = document.getElementById("result");
+      y.style.fontSize=x+"px";
+      var z = document.getElementById("showtext");
+      z.innerHTML = "Your font size is now= "+x+" px";
+
+    }
+  </script>
+</body>
+</html>

@@ -4,17 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uerdefine Function</title>
+  <style>
+#show{
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  margin: 50px auto;
+  background-size: cover;
+}
+  </style>
 </head>
-<body>
-  <button onclick="first()">First</button>
-  <button onclick="second()">Second</button>
-  <script>
-    function first(){
-      window.alert("Hamid Khan");
-    }
-    function second(){
-      window.alert("Yar Khan");
-    }
-  </script>
+<body >
+<div id="show">
+</div>
+<input type="file" accept=".png" id="file" onchange="demo()">
+
+<script>
+ function demo(){
+  var file = document.getElementById("file").value.replace(/.*(\/|\\)/,'');
+  var box = document.getElementById("show");
+  box.style.backgroundImage = "url("+file+")";
+ }
+</script>
 </body>
 </html>

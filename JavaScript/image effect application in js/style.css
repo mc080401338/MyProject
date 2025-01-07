@@ -1,0 +1,28 @@
+#box{
+  width: 720px;
+  height: 580px;
+  border: 10px solid navy;
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#pic{
+  width: 100%;
+  box-sizing: border-box;
+}
+#tool{
+  width: 200px; ;
+  height: 80px; ;
+  border:3px solid navy ;
+  float:left ;
+  margin: 10px; ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#tool p{
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}

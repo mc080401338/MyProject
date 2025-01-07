@@ -1,0 +1,14 @@
+#fixed-box{
+  width: 250px;
+  height: 80px;
+  background: red;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+}
+#show-text{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
