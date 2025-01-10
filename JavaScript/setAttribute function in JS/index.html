@@ -1,0 +1,22 @@
+<!--Set Attribute Function-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>set Attribue Function</title>
+</head>
+<body>
+  <h1 id="text">Welcome !</h1>
+  <button id="btn">Click</button>
+  <script>
+   var button = document.getElementById("btn");
+   btn.onclick = function stp(){
+    var heading = document.getElementById("text");
+    heading.setAttribute("align","center");
+   }
+
+   
+  </script>
+</body>
+</html>
