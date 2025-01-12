@@ -46,7 +46,7 @@ legend{
   overflow: scroll;
   padding: 15px;
 }
-#show{
+#result_box{
   display: none;
   margin: 20px auto;
   width: 90%;
