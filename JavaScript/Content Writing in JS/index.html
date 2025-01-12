@@ -1,0 +1,25 @@
+<!--Content Writing In JS-->
+<!--Predefined function for content writing
+1. createElement("p") (it means tag name e.g p is tag here)
+2. creatTextNode("texthere") (it mean text writing in tag)
+3. appendChild()  (where is tag e.g in body or in head)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Writing</title>
+</head>
+<body id="bdy">
+  
+  <script>
+    var tag = document.createElement("H1");
+    <!--here tag is written in capital letter h1 is written as H1-->
+    var content = document.createTextNode("we becoming programmar");
+    tag.appendChild(content);
+    var body = document.getElementById("bdy");
+    body.appendChild(tag);
+  </script>
+</body>
+</html>
