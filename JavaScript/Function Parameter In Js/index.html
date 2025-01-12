@@ -1,0 +1,37 @@
+<!--Function parameters in JS
+function a() --this is called function declaration--
+{
+  this is called body of function
+}
+  above whole is called function definition----
+  function a(2234)   this 2234 is called function parameters any value in paranthesis() is called function parameters---
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function parameters</title>
+</head>
+<body>
+  <form action="">
+    <input type="text" name="first_number" id="first">
+    <input type="text" name="second_number" id="second">
+    <input type="submit" name="" id="" onclick="a()">
+  </form>
+  <script>
+    function a(){
+      var one = Number(document.getElementById("first").value);
+      var two = Number(document.getElementById("second").value);
+      add(one,two);
+    }
+
+     function add(x,y)
+     {
+       window.alert(x+y);
+     }
+
+
+  </script>
+</body>
+</html>
