@@ -1,0 +1,29 @@
+<!--Odd and Even Number finder application with help of condition statement-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Even and Odd Number</title>
+</head>
+<body>
+  <h1>Odd & Even No.Finder</h1>
+  <form action="">
+    <input type="number" name="" id="num">
+    <button onclick="stp()">Check</button>
+  </form>
+  <script> 
+    function stp(){
+      var input = document.getElementById("num").value;
+      if(input%2 == 0)
+      {
+        window.alert("this is even number");
+      }
+      else
+      {
+        window.alert("this is a odd number");
+      }
+    }
+  </script>
+</body>
+</html>

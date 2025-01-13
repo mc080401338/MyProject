@@ -1,0 +1,32 @@
+<!--more than one clicks at same time on a button but on every click diffrent result will be produced functionality-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>multi clicks on a button</title>
+</head>
+<body>
+  <h1 id="result">hamid khan</h1>
+  <button id="in">Zoom In</button>
+  <button>Zoom Out</button>
+  <button>Reset</button>
+  
+  <script>
+    var z_in = document.getElementById("in");
+    var text = document.getElementById("result");
+    z_in.onclick = function first()
+    {
+      text.style.fontSize = "40px";
+      z_in.onclick = function sec()
+      {
+        text.style.fontSize = "50px";
+        z_in.onclick = function three()
+        {
+          text.style.fontSize = "60px";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
