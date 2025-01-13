@@ -1,0 +1,37 @@
+<!--Condition Statement
+1. if: what will happer when our condition will true
+2. else: what will happen when our if condition will false.
+3. else if: when our first condition will false then we can define new true condition-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>condition</title>
+</head>
+<body>
+  <img src="../images/download (1).jpg" alt="" width="100%" id="pic">
+  <button onclick="stp()" id="btn">Hide</button>
+  <script>
+    function stp(){
+      var picture = document.getElementById("pic");
+      var button = document.getElementById("btn");
+      var btn_txt = button.innerHTML;
+      picture.style.display = "none";
+      button.innerHTML ="show";
+    
+
+    if(btn_txt == "show")
+    {
+      picture.style.display = "block";
+      button.innerHTML ="Hide";
+    }
+    else
+    {
+      picture.style.display = "none";
+      button.innerHTML ="show";
+     }
+  }
+  </script>
+</body>
+</html>
