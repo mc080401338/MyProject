@@ -8,16 +8,26 @@
   <link rel="stylesheet" href="part3.css">
 </head>
 <body>
-<form action="">
+<form id="frm">
   <h1>Sign Up</h1>
   <p>It's quick and easy.</p>
   <hr>
   <input type="text" name="firstname" id="firstname" placeholder="Firstname">
 
-  <img src="" alt="warning" id="f_warning">
+  <img src="warning image.png" alt="warning" id="f_warning">
+  <img src="hint.png" alt="" id="fhint">
   <input type="text" name="surname" id="surname" placeholder="Surname">
   <input type="text" name="email" id="email" placeholder="mobile number or email address">
   <input type="password" name="password" id="password" placeholder="New password">
+  <div id="password_hint">
+    <p>Use a Securely Generated Password</p>
+    <p id="pass_hint_text">Jddd%5Fj@ff</p>
+  </div>
+  <input type="checkbox" name="" id="check" value="show password">
+  <span id="s_pass">show password</span>
+  <br>
+
+  <input type="submit" name="" id="submit">
 </form>
  <script src="part3.js"></script>
 </body>
